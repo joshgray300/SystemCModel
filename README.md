@@ -1,2 +1,2 @@
-# SystemCModel
-SystemC algorithm modeling
+# SystemC Algorithm Modeling
+In this project, I developed a high-performance embedded systems model for image processing using the IEEE SystemC language. This model is specifically designed to automatically detect edges in digital camera images. Initially, I employed a purely sequential, multi-stage C code for the Canny Edge Detection Algorithm, tailored to identify a broad spectrum of edges in grayscale images. To enhance performance, I eliminated costly dynamic memory allocations and adapted the code to be compliant with C++. Subsequently, each sequential stage of the Canny algorithm was restructured into separate modules within the SystemC model. Adopting a top-down design approach, I integrated pipelining, parallelization, and compiler optimizations. These enhancements significantly improved the simulated throughput (measured in frames per second) for a real-time recording drone camera.
